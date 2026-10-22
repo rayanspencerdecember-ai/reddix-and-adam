@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Reddick &amp; Sons, Inc. | Arlington plumbers, open 24 hours</title>
+<meta name="description" content="Family-owned Arlington plumbers with flat-rate pricing. Leaks, drains, water heaters, faucets, toilets and sewer repair. Rated 5.0 on Google by 3,593 customers.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;600&display=swap">
+<style>
+*{box-sizing:border-box;margin:0}
+:root{--bg:#EEF5F8;--sf:#fff;--ink:#0A2E45;--mu:#48657A;--ln:#D2E1E9;--wt:#1B94B8;--rd:#D6382A;--rh:#B72C20;--cu:#C97B3A;--pn:#0A2E45;--gd:#174868;color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#06161F;--sf:#0C2638;--ink:#E8F3F7;--mu:#9CB5C3;--ln:#1B3F55;--wt:#4EC4E8;--pn:#041019;--gd:#103349;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#06161F;--sf:#0C2638;--ink:#E8F3F7;--mu:#9CB5C3;--ln:#1B3F55;--wt:#4EC4E8;--pn:#041019;--gd:#103349;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 76px)}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.55 Barlow,system-ui,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--sf);z-index:10}
+h1,h2,h3,.cd{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-weight:800;line-height:1}
+h2{font-size:clamp(2.3rem,5vw,3.4rem);margin-bottom:10px}
+h3{font-size:1.7rem;margin:10px 0 6px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--wt);outline-offset:3px}
+.w{max-width:1120px;margin:auto;padding:0 20px}
+.sec{padding:72px 0}
+.lead{color:var(--mu);max-width:58ch;margin-bottom:26px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--sf)}
+.hb{display:flex;align-items:center;gap:22px;height:66px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:800 1.75rem/1 "Barlow Condensed",sans-serif;margin-right:auto}
+.logo svg{width:30px;height:30px}
+nav{display:flex;gap:22px}nav a{text-decoration:none;font-weight:600}nav a:hover{color:var(--rd)}
+.pipe{height:8px;background:linear-gradient(#E9A862,var(--cu) 45%,#7A4018)}
+.pipe i{display:block;height:100%;width:0;background:linear-gradient(#8EDCF2,var(--wt))}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 24px;border-radius:10px;border:2px solid transparent;font:600 1.05rem Barlow,sans-serif;text-decoration:none;cursor:pointer}
+.red{background:var(--rd);color:#fff}.red:hover{background:var(--rh)}
+.ghost{border-color:var(--ink);color:var(--ink);background:transparent}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.hero{padding:44px 0 64px}
+.hg{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+.live{display:inline-flex;align-items:center;gap:9px;font-weight:600;margin-bottom:16px}
+.live b{width:10px;height:10px;border-radius:50%;background:#22B573;animation:pl 2s infinite}
+@keyframes pl{0%{box-shadow:0 0 0 0 #22B57388}100%{box-shadow:0 0 0 12px #22B57300}}
+h1{font-size:clamp(2.9rem,7vw,5.2rem)}
+.sub{font-size:1.2rem;color:var(--mu);margin:18px 0 26px;max-width:46ch}
+.chips{display:flex;flex-wrap:wrap;gap:8px 22px;list-style:none;padding:0;margin-top:26px;font-weight:600}
+.chips li::before{content:"✓ ";color:var(--wt)}
+.art{position:relative}.art svg{display:block;width:100%;height:auto}
+.pn{fill:var(--pn)}.gd{stroke:var(--gd)}
+.flow{animation:fl 1s linear infinite}@keyframes fl{to{stroke-dashoffset:-32}}
+.spin{animation:sp 30s linear infinite;transform-box:fill-box;transform-origin:center}@keyframes sp{to{transform:rotate(360deg)}}
+#valve{cursor:pointer;transform-box:fill-box;transform-origin:center;transition:transform .5s}
+.off #valve{transform:rotate(90deg)}.off .flow{opacity:0}
+.rate{position:absolute;right:14px;bottom:14px;background:var(--sf);border-radius:12px;padding:10px 14px;font-weight:600;line-height:1.25}
+.rate span{color:#F2B01E;letter-spacing:2px}
+.cap{color:var(--mu);font-size:.95rem;margin-top:10px}
+#pick{display:flex;flex-wrap:wrap;gap:10px}
+#pick button{font:600 1.05rem Barlow,sans-serif;padding:11px 18px;border-radius:999px;border:2px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer}
+#pick button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+#ans{margin-top:20px;padding:22px 24px;background:var(--sf);border-left:8px solid var(--wt);border-radius:4px 18px 18px 4px;max-width:760px}
+
+#ans b{display:block;font:800 1.6rem/1.1 "Barlow Condensed",sans-serif;margin-bottom:6px}
+#ans .cta{margin-top:16px}
+#sv{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+#sv article{background:var(--sf);border:1px solid var(--ln);border-radius:18px;padding:22px}
+.ic{width:36px;height:36px;fill:none;stroke:var(--wt);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+#sv button{display:block;width:100%;text-align:left;background:none;border:0;border-top:1px solid var(--ln);padding:11px 0;font:inherit;color:var(--ink);cursor:pointer}
+#sv button:hover{color:var(--rd)}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:28px}
+.why div{border-top:4px solid var(--cu);padding-top:14px}.why p{color:var(--mu)}
+.sq{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;list-style:none;padding:0;counter-reset:s}.sq li{position:relative;padding-top:66px;counter-increment:s}.sq li::before{content:counter(s);position:absolute;top:0;left:0;z-index:1;display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:var(--rd);color:#fff;font:800 1.6rem "Barlow Condensed",sans-serif;box-shadow:0 0 0 5px var(--bg)}.sq li::after{content:"";position:absolute;top:20px;left:48px;right:-26px;height:8px;border-radius:4px;background:linear-gradient(#E9A862,var(--cu) 45%,#7A4018)}.sq li:last-child::after{display:none}.sq b{display:block;font:800 1.7rem/1 "Barlow Condensed",sans-serif;margin-bottom:4px}.sq span{color:var(--mu)}.gauge{display:block;width:240px;max-width:100%;height:auto}@media(max-width:860px){.sq{grid-template-columns:1fr}.sq li::after{display:none}}
+.dark{background:var(--pn);color:#fff}
+.rv{display:grid;grid-template-columns:auto 1fr 1fr;gap:36px;align-items:center;margin-top:26px}
+.big{font:800 7.5rem/.85 "Barlow Condensed",sans-serif}
+.st{color:#F2B01E;font-size:1.5rem;letter-spacing:3px;margin:6px 0}
+blockquote{font:700 1.9rem/1.1 "Barlow Condensed",sans-serif;border-left:4px solid var(--rd);padding-left:18px}
+blockquote small{display:block;font:400 .95rem Barlow,sans-serif;opacity:.75;margin-top:8px}
+.qg{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px}
+form,#done{background:var(--sf);border:1px solid var(--ln);border-radius:18px;padding:24px}
+label{display:block;font-weight:600;margin-bottom:14px}
+input,select,textarea{display:block;width:100%;margin-top:6px;padding:12px;font:inherit;color:var(--ink);background:var(--bg);border:1.5px solid var(--ln);border-radius:10px}
+.r2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+fieldset{border:0;padding:0;margin:0 0 14px}legend{font-weight:600;margin-bottom:6px}
+.o{display:flex;flex-wrap:wrap;gap:8px}.o label{margin:0}
+.o input{position:absolute;opacity:0;width:auto}
+.o span{display:block;padding:9px 16px;border:2px solid var(--ln);border-radius:999px;cursor:pointer}
+.o input:checked+span{border-color:var(--rd);background:var(--rd);color:#fff}
+.o input:focus-visible+span{outline:3px solid var(--wt)}
+#err{color:var(--rd);font-weight:600;min-height:1.5em}
+#done{margin-top:16px;border-color:var(--wt)}
+#msg{background:var(--bg);padding:12px;border-radius:10px;margin:12px 0;font-size:.95rem}
+footer{padding:12px 20px 36px;color:var(--mu)}
+.bar{display:none}
+@media(max-width:860px){.hg,.qg,.rv{grid-template-columns:1fr}.big{font-size:6rem}}
+@media(max-width:760px){nav,.hb .btn{display:none}.sec{padding:52px 0}body{padding-bottom:80px}.r2{grid-template-columns:1fr}.bar{display:flex;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:9;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:var(--sf);border-top:1px solid var(--ln)}.bar .btn{flex:1;padding:12px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3s6 6.2 6 10.5a6 6 0 0 1-12 0C6 9.2 12 3 12 3z"/></symbol><symbol id="i-tank" viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="17" rx="3"/><circle cx="12" cy="13" r="2.5"/><path d="M9 20v2M15 20v2M10 7h4"/></symbol><symbol id="i-tap" viewBox="0 0 24 24"><path d="M4 10h9a5 5 0 0 1 5 5v1M4 10V6h5v4"/><path d="M18 20c-1 0-1.6-.7-1.6-1.4 0-.8 1.600-2.200 1.600-2.200s1.600 1.400 1.600 2.200c0 .7-.6 1.400-1.600 1.400z"/></symbol><symbol id="i-toilet" viewBox="0 0 24 24"><path d="M7 3h10v6H7zM5 9h14c0 5-2 8-5 8h-4c-3 0-5-3-5-8zM10 17l-1 4h6l-1-4"/></symbol><symbol id="i-drain" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6v12M6 12h12M7.800 7.800l8.400 8.400M16.200 7.800l-8.400 8.400"/></symbol><symbol id="i-disp" viewBox="0 0 24 24"><path d="M5 4h14l-2 6H7zM7 10v8a3 3 0 0 0 3 3h4a3 3 0 0 0 3-3v-8M12 13v5M9.500 14.500l5 2"/></symbol></svg>
+<header><div class="w hb"><a class="logo" href="#top"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2s11 11 11 19a11 11 0 0 1-22 0C5 13 16 2 16 2z" fill="#D6382A"/><path d="M12 24V12h5a3.500 3.500 0 0 1 0 7h-5m5 0 4 5" fill="none" stroke="#fff" stroke-width="2.600" stroke-linecap="round" stroke-linejoin="round"/></svg>Reddick &amp; Sons</a><nav><a href="#fix">What’s wrong?</a><a href="#services">Services</a><a href="#reviews">Reviews</a><a href="#quote">Get a quote</a></nav><a class="btn red" data-call href="tel:">Call now</a></div><div class="pipe"><i id="lvl"></i></div></header>
+<main id="top">
+<section class="hero"><div class="w hg"><div>
+<p class="live"><b></b><span id="now">Open now, 24 hours</span></p>
+<h1>Water where it shouldn’t be? We answer at 2 a.m.</h1>
+<p class="sub">Reddick &amp; Sons has fixed Arlington leaks, drains and water heaters for 15+ years. Family owned, flat-rate priced and open around the clock.</p>
+<div class="cta"><a class="btn red" data-call href="tel:">Call now</a><a class="btn ghost" href="#quote">Get a quote</a></div>
+<ul class="chips"><li>Family owned &amp; operated</li><li>Flat-rate pricing</li><li>Verified on Google</li></ul></div>
+<div><div class="art"><svg viewBox="0 0 440 400" role="img" aria-label="Copper pipes with flowing water, a red shutoff valve and a 24/7 family owned stamp"><defs><pattern id="g" width="20" height="20" patternUnits="userSpaceOnUse"><path class="gd" d="M20 0H0v20" fill="none"/></pattern></defs><rect class="pn" width="440" height="400" rx="26"/><rect width="440" height="400" rx="26" fill="url(#g)"/>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M-20 80H140q40 0 40 40v90q0 40 40 40h240" stroke="#7A4018" stroke-width="28"/><path d="M-20 80H140q40 0 40 40v90q0 40 40 40h240" stroke="#C97B3A" stroke-width="22"/><path class="flow" d="M-20 80H140q40 0 40 40v90q0 40 40 40h240" stroke="#A6E8FA" stroke-width="5" stroke-dasharray="1 15"/></g>
+<g fill="#E9A862" stroke="#7A4018" stroke-width="2"><rect x="70" y="64" width="14" height="32" rx="4"/><rect x="166" y="150" width="28" height="14" rx="4"/><rect x="390" y="234" width="14" height="32" rx="4"/></g>
+<rect x="306" y="234" width="48" height="32" rx="7" fill="#5B6B75"/><rect x="326" y="212" width="8" height="24" fill="#8FA3AE"/>
+<g transform="translate(330 192)"><g id="valve" role="button" tabindex="0" aria-label="Turn the valve to stop or start the water"><circle r="24" fill="none" stroke="#D6382A" stroke-width="7"/><path d="M-24 0H24M0-24V24" stroke="#D6382A" stroke-width="6"/><circle r="7" fill="#D6382A"/></g></g>
+<path d="M352 188q20-16 43-5" fill="none" stroke="#8FA3AE" stroke-width="2"/><g transform="translate(394 204) rotate(8)"><circle r="26" fill="#E2B04A" stroke="#8A6516" stroke-width="2.5"/><circle cy="-19" r="3.5" fill="#8A6516"/><text y="-1" text-anchor="middle" font-size="12" font-weight="700" fill="#4A3308" font-family="Barlow,sans-serif">FLAT</text><text y="13" text-anchor="middle" font-size="12" font-weight="700" fill="#4A3308" font-family="Barlow,sans-serif">RATE</text></g><g transform="translate(105 312)"><circle r="64" fill="#D6382A"/><circle r="58" fill="none" stroke="#fff" stroke-opacity=".6" stroke-dasharray="2 4"/><g class="spin"><path id="c" d="M0-45a45 45 0 1 1 0 90a45 45 0 1 1 0-90" fill="none"/><text font-size="10.500" font-weight="700" fill="#fff" font-family="Barlow,sans-serif"><textPath href="#c" textLength="278" lengthAdjust="spacing">FAMILY OWNED ● OPEN AROUND THE CLOCK ●</textPath></text></g><text y="12" text-anchor="middle" font-size="34" font-weight="800" fill="#fff" font-family="'Barlow Condensed',sans-serif">24/7</text></g></svg>
+<div class="rate"><span>★★★★★</span><br>5.0 from 3,593 Google reviews</div></div>
+<p class="cap">Tap the red valve to turn the water off and on.</p></div></div></section>
+
+<section id="fix" class="sec"><div class="w"><h2>What’s going on?</h2><p class="lead">Pick the closest match, then send us the job in one tap.</p><div id="pick"></div><div id="ans" aria-live="polite"><p>Choose a problem above and we’ll point you to the fastest way to get it fixed.</p></div></div></section>
+
+<section id="services" class="sec"><div class="w"><h2>What we fix</h2><p class="lead">Twelve jobs, one family. Tap any service to start a quote for it.</p><div id="sv"></div></div></section>
+
+<section class="sec"><div class="w"><h2>Price first, wrench second</h2><p class="lead">Flat-rate pricing means you know what the job costs before we start it.</p><ol class="sq"><li><b>Tell us</b><span>Call, text or send the form.</span></li><li><b>Get your price</b><span>We quote the job, not the hours.</span></li><li><b>Say yes</b><span>No work starts until you do.</span></li><li><b>We fix it</b><span>Then you get back to your day.</span></li></ol></div></section>
+<section class="sec"><div class="w"><h2>A family shop, not a call center</h2><p class="lead">Small enough to know your street, experienced enough to have seen your problem before.</p><div class="why"><div><h3>Family owned and operated</h3><p>Reddick &amp; Sons is run by the family whose name is on the door, so every job is personal.</p></div><div><h3>Flat-rate pricing</h3><p>A set price for the job, so a slow afternoon on the clock never changes your bill.</p></div><div><h3>Open 24 hours</h3><p>Burst pipes don’t keep office hours. Call or text any time; we typically reply in minutes.</p></div><div><h3>15+ years in Arlington</h3><p>Over 3,500 neighbors have reviewed us on Google, and the average is a perfect 5.0.</p></div></div></div></section>
+
+<section id="reviews" class="sec dark"><div class="w"><h2>What neighbors say</h2><div class="rv"><div><svg class="gauge" viewBox="0 0 240 150" role="img" aria-label="Rating gauge pinned at 5.0 out of 5"><path d="M32 125A88 88 0 0 1 208 125" fill="none" stroke="#fff" stroke-opacity=".18" stroke-width="14"/><path d="M191.2 73.3A88 88 0 0 1 208 125" fill="none" stroke="#4EC4E8" stroke-width="14"/><path d="M20 125h-9M39.1 66.2l-7.3-5.3M89.1 29.9l-2.8-8.6M150.9 29.9l2.8-8.6M200.9 66.2l7.3-5.3M220 125h9" stroke="#fff" stroke-opacity=".6" stroke-width="2.5" stroke-linecap="round"/><path d="M120 125H190" stroke="#D6382A" stroke-width="5" stroke-linecap="round"/><circle cx="120" cy="125" r="9" fill="#D6382A"/><text x="120" y="98" text-anchor="middle" font-size="62" font-weight="800" fill="#fff" font-family="'Barlow Condensed',sans-serif">5.0</text></svg><div class="st" role="img" aria-label="5 out of 5 stars">★★★★★</div><p>3,593 Google reviews<br>Verified by Google</p></div><blockquote>“Did a great job on my sump pump issue.”<small>Google review</small></blockquote><blockquote>“He solved my leaking toilet issue!”<small>Google review</small></blockquote></div></div></section>
+
+<section id="quote" class="sec"><div class="w qg"><div><h2>Get a quote</h2><p class="lead">Tell us what’s wrong. We typically reply within a few minutes, at any hour.</p><p><b>Prefer to talk?</b><br><a class="cd" style="font-size:2.6rem;text-decoration:none" data-call="show" href="tel:">Call us</a></p><p class="lead">Open 24 hours. Serving Arlington and nearby areas.</p></div>
+<div><form id="f" novalidate><div class="r2"><label>Your name<input name="n" autocomplete="name"></label><label>Phone<input name="p" type="tel" autocomplete="tel"></label></div>
+<div class="r2"><label>What do you need?<select name="s" id="svc"></select></label><label>Street or ZIP<input name="a" autocomplete="postal-code"></label></div>
+<fieldset><legend>How soon?</legend><div class="o"><label><input type="radio" name="w" value="Right now"><span>Right now</span></label><label><input type="radio" name="w" value="Today" checked><span>Today</span></label><label><input type="radio" name="w" value="This week"><span>This week</span></label></div></fieldset>
+<label>Details<textarea name="d" rows="3" placeholder="Where is it, what’s it doing, and for how long?"></textarea></label>
+<p id="err" role="alert"></p><button class="btn red" type="submit">Send request</button></form>
+<div id="done" hidden><b class="cd" style="font-size:1.9rem">Your request is ready</b><p id="msg"></p><p>Send it by text and we’ll typically reply in minutes, or call to talk right away.</p><div class="cta" style="margin-top:14px"><a class="btn red" id="sms" href="#">Send by text</a><a class="btn ghost" data-call href="tel:">Call now</a><button class="btn ghost" id="cp" type="button">Copy message</button></div></div></div></div></section>
+</main>
+<footer class="w"><p><b>Reddick &amp; Sons, Inc.</b> Family owned and operated. Open 24 hours. Serving Arlington and nearby areas.</p></footer>
+<div class="bar"><a class="btn red" data-call href="tel:">Call now</a><a class="btn ghost" href="#quote">Get a quote</a></div>
+<script>
+const PHONE={show:"(703) 555-0123",tel:"+17035550123"}; // replace with the real business number
+const $=s=>document.querySelector(s);
+const P=[
+{k:"Leak or burst pipe",e:1,s:"Find & repair leak",t:"If you can reach it, shut off your main water valve and stay away from any electrical outlets near the water. We’ll handle the rest."},
+{k:"No hot water",e:0,s:"Repair water heater",t:"We repair and replace water heaters. Send us the details and we typically reply in minutes."},
+{k:"Clogged drain",e:0,s:"Unclog drain",t:"We unclog drains. Tell us where it’s backing up and we typically reply in minutes."},
+{k:"Running toilet",e:0,s:"Repair toilet",t:"We repair toilets. Tell us what it’s doing and we typically reply in minutes."},
+{k:"Dripping faucet",e:0,s:"Repair faucet",t:"We repair and install faucets. Tell us what it’s doing and we typically reply in minutes."},
+{k:"Sewer smell or backup",e:1,s:"Repair sewer",t:"Stop using water in the house and keep kids and pets away from any standing water. We’ll handle the rest."},
+{k:"Jammed disposal",e:0,s:"Repair garbage disposal",t:"We repair and install garbage disposals. Tell us what it’s doing and we typically reply in minutes."},
+{k:"Something else",e:0,s:"",t:"Not sure what it is? Describe it in the quote form and we’ll point you the right way."}];
+const S=[["drop","Leaks & pipes",["Find & repair leak","Repair pipe"]],["tank","Water heaters",["Install water heater","Repair water heater"]],["tap","Faucets",["Install faucet","Repair faucet"]],["toilet","Toilets & showers",["Repair toilet","Repair shower"]],["drain","Drains & sewer",["Unclog drain","Repair sewer"]],["disp","Garbage disposals",["Install garbage disposal","Repair garbage disposal"]]];
+const svc=$("#svc"),ans=$("#ans"),pk=$("#pick");
+svc.append(new Option("Not sure yet",""));
+S.forEach(g=>g[2].forEach(x=>svc.append(new Option(x,x))));
+document.querySelectorAll("[data-call]").forEach(a=>{a.href="tel:"+PHONE.tel;if(a.dataset.call)a.textContent=PHONE.show});
+function go(s,w){svc.value=s||"";if(w)document.querySelector('input[name=w][value="'+w+'"]').checked=true;$("#quote").scrollIntoView();setTimeout(()=>$("#f [name=n]").focus({preventScroll:true}),600)}
+P.forEach(p=>{const b=document.createElement("button");b.type="button";b.textContent=p.k;b.setAttribute("aria-pressed","false");
+b.onclick=()=>{[...pk.children].forEach(c=>c.setAttribute("aria-pressed",String(c===b)));
+ans.innerHTML=`<b>We can take care of that.</b><p>${p.t}</p><div class="cta"><a class="btn red" href="tel:${PHONE.tel}">Call now</a><button class="btn ghost" type="button" id="rq">Request this fix</button></div>`;
+$("#rq").onclick=()=>go(p.s,p.e?"Right now":"Today")};pk.append(b)});
+const sv=$("#sv");
+S.forEach(([ic,t,l])=>{const d=document.createElement("article");d.innerHTML=`<svg class="ic" aria-hidden="true"><use href="#i-${ic}"/></svg><h3>${t}</h3>`+l.map(x=>`<button type="button" data-s="${x}">${x}</button>`).join("");sv.append(d)});
+sv.onclick=e=>{const s=e.target.dataset.s;if(s)go(s,"Today")};
+$("#f").onsubmit=e=>{e.preventDefault();const f=new FormData(e.target),n=f.get("n").trim(),ph=f.get("p").trim();
+if(!n||ph.replace(/\D/g,"").length<7){$("#err").textContent="Add your name and a phone number where we can reach you.";return}
+$("#err").textContent="";
+const d=f.get("d").trim(),a=f.get("a").trim(),m="Hi Reddick & Sons, this is "+n+" ("+ph+"). Need: "+(f.get("s")||"plumbing help")+". When: "+f.get("w")+"."+(a?" Location: "+a+".":"")+(d?" Details: "+d:"");
+$("#msg").textContent=m;$("#sms").href="sms:"+PHONE.tel+"?&body="+encodeURIComponent(m);$("#done").hidden=false;$("#done").scrollIntoView({block:"center"})};
+$("#cp").onclick=async()=>{try{await navigator.clipboard.writeText($("#msg").textContent);$("#cp").textContent="Copied"}catch(e){}};
+const tg=()=>$(".art").classList.toggle("off"),v=$("#valve");
+v.onclick=tg;v.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();tg()}};
+const lv=$("#lvl"),pr=()=>{lv.style.width=Math.min(100,scrollY/Math.max(1,document.documentElement.scrollHeight-innerHeight)*100)+"%"};
+addEventListener("scroll",pr,{passive:true});pr();
+const tm=()=>{const t=new Date().toLocaleTimeString("en-US",{hour:"numeric",minute:"2-digit"}).replace(/\s*AM/," a.m.").replace(/\s*PM/," p.m.");$("#now").textContent="It’s "+t+" and we’re open."};tm();setInterval(tm,30000);
+</script></body></html>
